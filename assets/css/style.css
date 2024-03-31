@@ -207,3 +207,16 @@ a{
   #socials-links ul li a:hover{
     color: #157347;
   }
+
+  #gallery h3{
+    font-family: Nunito;
+  }
+
+  #gallery img{
+    filter: grayscale(0.8);
+    transition: all 0.5s ease;
+  }
+
+  #gallery img:hover{
+    filter: grayscale(0);
+  }

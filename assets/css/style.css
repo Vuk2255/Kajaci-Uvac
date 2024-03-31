@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .c-item{
     height: 600px;
 }
@@ -11,18 +13,22 @@
 a{
     text-decoration: none;
     color: white;
+    font-family: Nunito;
 }
 
 #adventure h2{
     color: white;
+    font-family: Nunito;
 }
 
 #adventure p{
     color: white;
+    font-family: Nunito;
 }
 
 #adventure h5{
     color: white;
+    font-family: Nunito;
 }
 
 .card img{
@@ -83,6 +89,7 @@ a{
   .counts .title h3 {
     font-size: 36px;
     font-weight: 700;
+    font-family: Nunito;
   }
   
   .counts .counters span {
@@ -97,10 +104,106 @@ a{
     margin: 0 0 20px 0;
     font-size: 14px;
     color: #fff;
+    font-family: Nunito;
   }
   
   @media (min-width: 1200px) {
     .counts {
       background-attachment: fixed;
     }
+  }
+
+  #offer {
+    overflow: hidden;
+  }
+  
+  #offer h2 {
+    color: white;
+    font-family: Nunito;
+  }
+
+  #offer p {
+    color: white;
+    font-family: Nunito;
+  }
+
+  #offer .nav-tabs {
+    border: 0;
+  }
+  
+  #offer .nav-link {
+    border: 0;
+    padding: 12px 15px;
+    transition: 0.3s;
+    color: #fff;
+    border-radius: 0;
+    border-right: 2px solid #157347;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  #offer .nav-link:hover {
+    color: #157347;
+  }
+  
+  #offer .nav-link.active {
+    color: #1a1814;
+    background: #157347;
+    border-color: #ffffff;
+  }
+  
+  #offer .nav-link:hover {
+    border-color: #157347;
+  }
+  
+  #offer .tab-pane.active {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  #offer .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: Nunito;
+  }
+  
+  #offer .details p {
+    color: #aaaaaa;
+    font-family: Nunito;
+  }
+  
+  #offer .details p:last-child {
+    margin-bottom: 0;
+    font-family: Nunito;
+  }
+  
+  @media (max-width: 992px) {
+    #offer .nav-link {
+      border: 0;
+      padding: 15px;
+    }
+  }
+
+  #footer1 p{
+    color: white;
+    font-family: Nunito;
+  }
+
+  #footer1 a{
+    color: white;
+    font-family: Nunito;
+  }
+
+  #footer1 h4{
+    color: white;
+    font-family: Nunito;
+  }
+
+  #socials-links ul li a{
+    transition: all 0.2 ease-in-out;
+  }
+
+  #socials-links ul li a:hover{
+    color: #157347;
   }

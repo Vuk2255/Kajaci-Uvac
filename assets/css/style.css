@@ -1,0 +1,106 @@
+.c-item{
+    height: 600px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#adventure h2{
+    color: white;
+}
+
+#adventure p{
+    color: white;
+}
+
+#adventure h5{
+    color: white;
+}
+
+.card img{
+    transition: all 0.2s;
+}
+
+.card img:hover{
+    box-shadow: 10px 5px 5px #157347;
+}
+
+.clients {
+    padding: 12px 0;
+    text-align: center;
+  }
+  
+  .clients img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
+  }
+  
+  .clients img:hover {
+    filter: none;
+    transform: scale(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .clients img {
+      max-width: 40%;
+    }
+  }
+
+  .counts {
+    background: url("../img/kayak.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 80px 0 60px 0;
+    position: relative;
+  }
+  
+  .counts::before {
+    content: "";
+    position: absolute;
+    background: rgba(17, 17, 17, 0.9);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .counts .title {
+    position: relative;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .counts .title h3 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .counts .counters span {
+    font-size: 48px;
+    display: block;
+    font-weight: 700;
+    color: #009961;
+  }
+  
+  .counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  @media (min-width: 1200px) {
+    .counts {
+      background-attachment: fixed;
+    }
+  }

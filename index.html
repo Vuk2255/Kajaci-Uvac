@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Kajaci Uvac</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="logo" height="50">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Početna</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">O nama</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Galerija</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ostalo
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="index.html">O Uvcu</a></li>
+                      <li><a class="dropdown-item" href="#">O autoru</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Kontakt</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="modal fade" tabindex="-1" id="booking">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Zakažite posetu
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="obrada.php" method="post">
+                        <div class="row g-2">
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="email" id="email1" class="form-control" placeholder="primer@gmail.com">
+                                    <label for="email1">E-mail adresa</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select id="select1" class="form-select">
+                                        <option>2 Kajaka - $10</option>
+                                        <option>3 Kajaka - $30</option>
+                                        <option>5 Kajaka - $40</option>
+                                        <option>5+ Kajaka - $50</option>
+                                    </select>
+                                    <label for="select1">Odaberite vaš paket</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Otkaži
+                  </button>
+                  <button type="button" class="btn btn-success"><a href="visit.html">Nastavi</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="assets/img/slider1.jpg" class="d-block w-100 c-img" alt="slider1">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="fs-3 mt-5">OTKRIJTE NETAKNUTU PRIRODU</p>
+                  <h1 class="display-1 fw-bolder text-capitalize">Uvac</h1>
+                  <button class="btn btn-success px-4 py-1 fs-5 mt-2"><a href="about.html">Saznaj više</a></button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="assets/img/slider2.jpg" class="d-block w-100 c-img" alt="slider2">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5">SEZONA KAJAKA POČINJE</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">Kajak</h1>
+                    <button class="btn btn-success px-4 py-1 fs-5 mt-2" data-bs-toggle="modal" data-bs-target="#booking">Zakažite posetu</button>
+                  </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="assets/img/slider3.jpg" class="d-block w-100 c-img" alt="slider3">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="fs-3 mt-5">SAZNAJTE VIŠE</p>
+                    <h1 class="display-1 fw-bolder text-capitalize">O nama</h1>
+                    <button class="btn btn-success px-4 py-1 fs-5 mt-2"><a href="about.html">Saznaj više</a></button>
+                  </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center gx-4">
+                <div class="col-md-5">
+                    <div class="ms-md-2 ms-lg-5"><img class="img-fluid rounded-3" src="assets/img/kajak-n.jpg"></div>
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <div class="ms-md-2 ms-lg-5">
+                        <span class="text-muted">Naša priča</span>
+                        <h2 class="display-5 fw-bold">O nama</h2>
+                        <p class="lead">Počeli smo sa radom 2015. godine kao istinski ljubitelji prirode Specijalnog rezervata prirode “Uvac”. Naše ture podrazumevaju najpre aktivnosti na vodi, kao što su iznajmljivanje kajaka od polietilena (dvosede i jednosede), kao i kupanje i obilazak vidikovaca na meandrima Uvca.</p>
+                        <p class="lead mb-0">Doživite sa nama najbolju avanturu kajacima na Uvačkom (meandri Uvca) i Zlatarskom jezeru - Dobro došli!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="adventure" class="pt-5 bg-dark">
+        <h2 class="text-center my-5">Avanture</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="card border-0">
+                        <img src="assets/img/beloglavisup.jpg" class="card-img-top" alt="bsup">
+                    <div class="card-body bg-dark text-center">
+                          <h5 class="card-title">Veslavo, fotografišemo...</h5>
+                          <p class="card-text">Veslamo meandrima Uvca i u njihovom najlepšem delu se povremeno zaustavljamo zbog kupanja i osmatranja beloglavih supova, kao i fotografisanja.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card border-0">
+                        <img src="assets/img/team.jpg" class="card-img-top" alt="bsup">
+                    <div class="card-body bg-dark text-center">
+                          <h5 class="card-title">Team Building</h5>
+                          <p class="card-text">Za veće TEAM BUILDING grupe naši vodiči organizuju uspon na jedan od dva najlepša vidikovca na meandrima - Veliki vrh ili Molitva.</p>
+                          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#booking">Posetite nas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card border-0">
+                        <img src="assets/img/palacinke.jpg" class="card-img-top" alt="bsup">
+                    <div class="card-body bg-dark text-center">
+                          <h5 class="card-title">Osveženje</h5>
+                          <p class="card-text">Nakon panoramskog razgledanja sa vidikovca, sledi osveženje u Markovoj kolibi sa hladnim napitcima ili čuvenim palačinkama od heljde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients" class="clients section-bg">
+        <div class="container">
+          <div class="row" data-aos="zoom-in">
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+              <img src="assets/img/partner1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+              <img src="assets/img/partner2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+              <img src="assets/img/partner3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+              <img src="assets/img/partner4.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+              <img src="assets/img/partner5.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+              <img src="assets/img/partner6.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="counts" class="counts">
+        <div class="container">
+          <div class="text-center title top-0">
+            <h3>Zašto odabrati nas?</h3>
+          </div>
+          <div class="row counters position-relative">
+            <div class="col-lg-3 col-6 text-center">
+              <span><h3>10</h3></span>
+              <p>Godina Iskustva</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+              <span><h3>2000+</h3></span>
+              <p>Turista</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <span><h3>500+</h3></span>
+                <p>Odrađenih ruta</p>
+              </div>
+              <div class="col-lg-3 col-6 text-center">
+                <span><h3>20</h3></span>
+                <p>Zaposlenih</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    <footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+::selection {
+    background: #157347;
+  }
+
 .c-item{
     height: 600px;
 }
@@ -220,3 +224,48 @@ a{
   #gallery img:hover{
     filter: grayscale(0);
   }
+
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #157347;
+    font-family: Nunito;
+  }
+
+  .about .content p {
+    font-family: Nunito;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+.about img{
+    transition: all 0.2s;
+}
+
+.about img:hover{
+    box-shadow: 5px 10px 10px #157347;
+}
